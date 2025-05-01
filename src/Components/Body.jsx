@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // import { Button } from "@/components/ui/button";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import AOS from "aos";
@@ -10,7 +10,11 @@ import emailjs from 'emailjs-com';
 
 
 export default function CompanyWebsite() {
+
+  const [send ,setSend]=useState(false)
+
   const sendEmail = (e) => {
+    setSend(true);
     e.preventDefault();
   
     emailjs.sendForm(
@@ -21,12 +25,14 @@ export default function CompanyWebsite() {
     ).then(
       (result) => {
         alert('Message sent!');
+        setSend(false);
       },
       (error) => {
         alert('Failed to send. Try again.');
+        setSend(false);
       }
     );
-  
+   
     e.target.reset();
   };
   useEffect(() => {
@@ -103,12 +109,13 @@ export default function CompanyWebsite() {
       <section id="contact" className="py-20 px-6 md:px-20 bg-white" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center mb-12">Get in Touch</h2>
         <div className="grid md:grid-cols-2 gap-12">
+
           <form className="space-y-6" onSubmit={sendEmail}>
            
            <input type="text" name="name" placeholder="Your Name" className="w-full border p-4 rounded-md" required />
           <input type="email" name="email" placeholder="Your Email"   className="w-full border p-4 rounded-md" required />
            <textarea name="message" placeholder="Your Message" className="w-full border p-4 rounded-md h-32" required></textarea>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl" type="submit" >Send Message</button>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl" type="submit"  >{send ? "sending": "send"}</button>
           </form>
           <div className="space-y-4 text-lg">
             <div className="flex items-center gap-2"><FaPhone /> +91 1234567892</div>
