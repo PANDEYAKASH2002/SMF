@@ -1,12 +1,35 @@
-# React + Vite
+# 🏢 Smart Facility Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Site 🌐](https://smf-aecv.vercel.app/)
 
-Currently, two official plugins are available:
+Smart Facility Management (SFM) is a web-based solution designed to optimize and automate building and facility operations using modern technology. Whether you're managing residential complexes, commercial offices, or industrial facilities — this tool empowers you to streamline tasks, monitor assets, and reduce operational costs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📋 **Real-Time Monitoring** – Stay informed with instant data from connected systems.
+- 🛠️ **Maintenance Scheduling** – Automate routine tasks and avoid service delays.
+- 📊 **Data Analytics Dashboard** – Visual insights into energy usage, performance, and trends.
+- 📱 **Responsive Design** – Seamless experience on desktop, tablet, and mobile.
+- 🌱 **Sustainable Solutions** – Track and reduce environmental impact.
+- 🧑‍💼 **User-Friendly Interface** – Simple, clean UI built with React and Tailwind CSS.
+
+---
+
+## 🛠️ Built With
+
+- **React.js** – Frontend JavaScript library for building UI
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **JavaScript** – Core language powering interactivity
+- **Vercel** – Deployment platform for hosting the live app
+
+---
+
+## 📦 Installation (For Developers)
+
+```bash
+git clone https://github.com/PANDEYAKASH2002/SMF.git
+cd smart-facility-management
+npm install
+npm run dev

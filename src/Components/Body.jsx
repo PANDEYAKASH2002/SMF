@@ -54,9 +54,9 @@ export default function CompanyWebsite() {
             <div> <img src="/logo1.jpg" alt="logo" className="h-8 " /></div>
           {/* <div className="text-xl flex justify-center font-bold">SMART FACILITY MANAGEMENT</div> */}
           <div className="space-x-4">
-           <b> <button onClick={() => handleScroll("about")} className="hover:underline text-black text-xl px-4">About</button></b>
-            <b><button onClick={() => handleScroll("services")} className="hover:underline text-black text-xl px-4">Services</button></b>
-            <b><button onClick={() => handleScroll("contact")} className="hover:underline text-black text-xl px-4">Contact</button></b>
+           <b> <button onClick={() => handleScroll("about")} className="hover:underline text-black text-xl px-1">About</button></b>
+            <b><button onClick={() => handleScroll("services")} className="hover:underline text-black text-xl px-1">Services</button></b>
+            <b><button onClick={() => handleScroll("contact")} className="hover:underline text-black text-xl px-1">Contact</button></b>
           </div>
         </nav>
         <h1 className="text-4xl md:text-6xl text-black font-bold mb-4" data-aos="fade-up">Empowering Workforces, Securing Spaces</h1>
