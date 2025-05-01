@@ -87,9 +87,9 @@ export default function CompanyWebsite() {
         <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { title: "Labor Supply", img: "/labour-service.jpg", desc: "Reliable and experienced workers for construction, factories, and maintenance jobs." },
-            { title: "Security Services", img: "/security-service.jpg", desc: "Trained watchmen to ensure the safety and order of your premises round the clock." },
-            { title: "Facility Support", img: "/facility-support.jpg", desc: "Customized facility management solutions to meet your unique needs." }
+            { title: "Labor Supply", img: "/service1.jpeg", desc: "Reliable and experienced workers for construction, factories, and maintenance jobs." },
+            { title: "Security Services", img: "/service2.jpg", desc: "Trained watchmen to ensure the safety and order of your premises round the clock." },
+            { title: "Facility Support", img: "/support3.jpeg", desc: "Customized facility management solutions to meet your unique needs." }
           ].map((service, idx) => (
             <div
               key={idx}
