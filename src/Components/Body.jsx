@@ -44,7 +44,7 @@ export default function CompanyWebsite() {
   };
 
   return (
-    <div className="font-sans text-gray-800 scroll-smooth ">
+    <div className="font-sans text-gray-800 scroll-smooth  ">
       {/* Hero Section */}
       <section
         className="body-section min-h-screen Relative bg-cover bg-center flex flex-col justify-center items-center text-white text-center px-4 relative bg-gradient-to-r from-blue-200 via-blue-600  to-blue-300"
@@ -71,7 +71,7 @@ export default function CompanyWebsite() {
       {/* About Section */}
       <section id="about" className="py-20 px-6 md:px-20 bg-white" data-aos="fade-up">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <img src="/guard.webp" alt="About Us" className="rounded-xl shadow-lg" />
+          <img src="/guard2.jpg" alt="About Us" className="rounded-xl shadow-lg" />
           <div>
             <h2 className="text-3xl font-bold mb-4">About SMART FACILITY MANAGEMENT</h2>
             <p className="text-lg mb-4">
@@ -96,7 +96,7 @@ export default function CompanyWebsite() {
               className="rounded-2xl shadow-lg transition-transform hover:scale-105 overflow-hidden bg-cover bg-center text-white"
               style={{ backgroundImage: `url('${service.img}')` }}
             >
-              <div className="bg-black bg-opacity-60 p-6 h-full">
+              <div className="bg-blue-400 bg-opacity-60 p-6 h-full">
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                 <p>{service.desc}</p>
               </div>
@@ -115,7 +115,7 @@ export default function CompanyWebsite() {
            <input type="text" name="name" placeholder="Your Name" className="w-full border p-4 rounded-md" required />
           <input type="email" name="email" placeholder="Your Email"   className="w-full border p-4 rounded-md" required />
            <textarea name="message" placeholder="Your Message" className="w-full border p-4 rounded-md h-32" required></textarea>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl" type="submit"  >{send ? "sending": "send"}</button>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 flex justify-center text-center rounded-xl" type="submit"  >{send ? "sending": "send"}</button>
           </form>
           <div className="space-y-4 text-lg">
             <div className="flex items-center gap-2"><FaPhone /> +91 1234567892</div>
