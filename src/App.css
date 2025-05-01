@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.hero-section{
+    background-image: url("/public/security.jpg");
+    z-index: -999;
+    position: relative;
+}
+
