@@ -44,10 +44,10 @@ export default function CompanyWebsite() {
   };
 
   return (
-    <div className="font-sans text-gray-800 scroll-smooth bg-gray-300">
+    <div className="font-sans text-gray-800 scroll-smooth ">
       {/* Hero Section */}
       <section
-        className="body-section min-h-screen Relative bg-cover bg-center flex flex-col justify-center items-center text-white text-center px-4 relative bg-grey-200"
+        className="body-section min-h-screen Relative bg-cover bg-center flex flex-col justify-center items-center text-white text-center px-4 relative bg-gradient-to-r from-blue-200 via-blue-600  to-blue-300"
         
       >
         <nav className="absolute opacity-100 top-0 left-0 right-0 flex justify-between items-center px-6 py-4 bg-opacity-20 backdrop-blur-sm">
